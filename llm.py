@@ -5,8 +5,8 @@ import re
 import json
 from openai import OpenAI
 import tiktoken
-
-zhipu_key = '---'
+from config import Config
+zhipu_key = Config.api_key
 client = OpenAI(
     api_key=zhipu_key,
     base_url="https://open.bigmodel.cn/api/paas/v4/"
